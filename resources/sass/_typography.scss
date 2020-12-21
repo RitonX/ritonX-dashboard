@@ -1,0 +1,74 @@
+// Font Family
+$system-font-family : 'IRANSans' ;
+
+// Headings
+@mixin heading-1($color: $white) {
+    font-size: 80px;
+    line-height: 86px;
+    font-weight: bold;
+    color: $color;
+}
+@mixin heading-2($color: $white) {
+    font-size: 60px;
+    line-height: 86px;
+    font-weight: bold;
+    color: $color;
+}
+@mixin heading-3($color: $white) {
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: bold;
+    color: $color;
+}
+@mixin heading-4($color: $white){
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+    color: $color;
+}
+
+// Body Text
+%large {
+    line-height: 37px;
+    font-size: 24px;
+}
+
+@mixin large-text($color: $white) {
+    @extend %large;
+    color: $color;
+}
+
+@mixin large-text-bold($color: $white) {
+  @extend %large;
+  font-weight: bold;
+  color: $color;
+}
+
+%mediun {
+  line-height: 31px;
+  font-size: 20px;
+}
+
+@mixin mediun-text($color: $white) {
+  @extend %mediun;
+  color: $color;
+}
+
+@mixin mediun-text-bold($color: $white) {
+@extend %mediun;
+font-weight: bold;
+color: $color;
+}
+
+
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb.eot');
+    src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb.ttf') format('truetype');
+}
