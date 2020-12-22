@@ -3,7 +3,7 @@
 
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
 
 // Variables
@@ -13,8 +13,12 @@
 
 
 // style
-
+* {
+    font-family: 'IRANSans';
+}
 body, nav {
+    direction: rtl;
+    text-align: right;
     background: $dark-blue;
     color: $white;
     font-family: $system-font-family;
@@ -24,6 +28,10 @@ body, nav {
     text-align: center;
     font-family: $system-font-family;
 }
+
+// *::placeholder{
+//     font-family: 'IRANSans';
+// }
 
 h1 {
     @include heading-1;
