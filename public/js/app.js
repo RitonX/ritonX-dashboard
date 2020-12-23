@@ -2053,8 +2053,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "SignIn"
+  name: "SignIn",
+  data: function data() {
+    return {
+      isDarkMode: true
+    };
+  },
+  methods: {
+    toggleDarkMode: function toggleDarkMode() {
+      this.isDarkMode = !this.isDarkMode;
+      document.body.style.background = this.isDarkMode ? "#212c4f" : "#f0f3f5";
+    }
+  }
 });
 
 /***/ }),
@@ -2093,7 +2134,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".container[data-v-22da9f12] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 80vh;\n}\n.login[data-v-22da9f12] {\n  width: 400px;\n}\n.request[data-v-22da9f12] {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n  color: rgba(255, 255, 255, 0.3);\n}\n.request a[data-v-22da9f12] {\n  color: white;\n}\nh4[data-v-22da9f12] {\n  line-height: 34px;\n  font-size: 24px;\n  text-align: center;\n  color: #ffffff;\n}\ninput[data-v-22da9f12] {\n  background: rgba(255, 255, 255, 0.2);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  box-sizing: border-box;\n  border-radius: 4px;\n  height: 60px;\n  width: 100%;\n  font-size: 20px;\n  color: white;\n  text-align: center;\n  margin-top: 20px;\n}\ninput[data-v-22da9f12]::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\ninput[data-v-22da9f12]:-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\ninput[data-v-22da9f12]::placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\nbutton[data-v-22da9f12] {\n  background: #56ccf2;\n  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);\n  border: none;\n  border-radius: 4px;\n  height: 60px;\n  width: 100%;\n  font-size: 20px;\n  color: white;\n  margin-top: 20px;\n  margin-bottom: 30px;\n  cursor: pointer;\n}\na[data-v-22da9f12] {\n  line-height: 25px;\n  font-size: 16px;\n  text-align: center;\n  color: rgba(255, 255, 255, 0.3);\n  text-decoration: none;\n}", ""]);
+exports.push([module.i, ".light-background[data-v-22da9f12] {\n  background-color: #F0F3F5;\n}\n.dark-background[data-v-22da9f12] {\n  background-color: #212c4f;\n}\n.light-text[data-v-22da9f12] {\n  color: #ffffff;\n}\n.dark-text[data-v-22da9f12] {\n  color: #000000;\n}\n.light-field[data-v-22da9f12] {\n  background: rgba(255, 255, 255, 0.2);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n}\n.light-field[data-v-22da9f12]::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\n.light-field[data-v-22da9f12]:-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\n.light-field[data-v-22da9f12]::placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\n.dark-field[data-v-22da9f12] {\n  background: rgba(198, 208, 235, 0.2);\n  border: 1px solid rgba(0, 0, 0, 0.2);\n}\n.dark-field[data-v-22da9f12]::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.3);\n}\n.dark-field[data-v-22da9f12]:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.3);\n}\n.dark-field[data-v-22da9f12]::placeholder {\n  color: rgba(0, 0, 0, 0.3);\n}\n.container[data-v-22da9f12] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 90vh;\n}\n.login[data-v-22da9f12] {\n  width: 400px;\n}\n.light-request[data-v-22da9f12] {\n  color: rgba(255, 255, 255, 0.3);\n}\n.light-request a[data-v-22da9f12] {\n  color: white;\n}\n.dark-request[data-v-22da9f12] {\n  color: rgba(0, 0, 0, 0.3);\n}\n.dark-request a[data-v-22da9f12] {\n  color: #000000;\n}\n.request[data-v-22da9f12] {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n}\nh4[data-v-22da9f12] {\n  line-height: 34px;\n  font-size: 24px;\n  text-align: center;\n  color: #ffffff;\n}\ninput[data-v-22da9f12] {\n  background: rgba(255, 255, 255, 0.2);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  box-sizing: border-box;\n  border-radius: 4px;\n  height: 60px;\n  width: 100%;\n  font-size: 20px;\n  color: white;\n  text-align: center;\n  margin-top: 20px;\n}\ninput[data-v-22da9f12]::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\ninput[data-v-22da9f12]:-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\ninput[data-v-22da9f12]::placeholder {\n  color: rgba(255, 255, 255, 0.3);\n}\nbutton[data-v-22da9f12] {\n  background: #56ccf2;\n  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);\n  border: none;\n  border-radius: 4px;\n  height: 60px;\n  width: 100%;\n  font-size: 20px;\n  color: white;\n  margin-top: 20px;\n  margin-bottom: 30px;\n  cursor: pointer;\n}\na[data-v-22da9f12] {\n  line-height: 25px;\n  font-size: 16px;\n  text-align: center;\n  color: rgba(255, 255, 255, 0.3);\n  text-decoration: none;\n}\n.light-link[data-v-22da9f12] {\n  color: rgba(255, 255, 255, 0.3);\n}\n.dark-link[data-v-22da9f12] {\n  color: rgba(0, 0, 0, 0.3);\n}", ""]);
 
 // exports
 
@@ -34037,47 +34078,121 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c(
-      "div",
-      { staticClass: "request" },
-      [
-        _vm._v("\n    آیا در سایت Ritonx عضو نیستید؟\n    "),
-        _c("router-link", { attrs: { to: "/request" } }, [
-          _vm._v("ثبت نام در سایت")
-        ])
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "login" },
-      [
-        _c("img", {
-          attrs: {
-            width: "50%",
-            height: "auto",
-            src: __webpack_require__(/*! ../../../images/logoRitonx.png */ "./resources/images/logoRitonx.png"),
-            alt: "Logo Ritonx"
+  return _c(
+    "div",
+    {
+      staticClass: "container",
+      class: {
+        "light-background": !_vm.isDarkMode,
+        "dark-background": _vm.isDarkMode
+      }
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass: "request",
+          class: {
+            "light-request": _vm.isDrkMode,
+            "dark-request": !_vm.isDarkMode
           }
-        }),
-        _vm._v(" "),
-        _c("h4", [_vm._v("ورود به سایت آموزشی Ritonx")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "email", placeholder: "ایمیل" } }),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "password", placeholder: "رمز عبور" } }),
-        _vm._v(" "),
-        _c("button", [_vm._v("ورود به سایت")]),
-        _vm._v(" "),
-        _c("router-link", { attrs: { to: "/recover" } }, [
-          _vm._v(" رمز عبور خود را فراموش کرده اید؟")
-        ])
-      ],
-      1
-    )
-  ])
+        },
+        [
+          _vm._v("\n    آیا در سایت Ritonx عضو نیستید؟\n    "),
+          _c("router-link", { attrs: { to: "/request" } }, [
+            _vm._v("ثبت نام در سایت")
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "login" },
+        [
+          _c("img", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.isDarkMode,
+                expression: "isDarkMode"
+              }
+            ],
+            attrs: {
+              width: "60%",
+              height: "auto",
+              src: __webpack_require__(/*! ../../../images/darkLogo.svg */ "./resources/images/darkLogo.svg"),
+              alt: "Logo Ritonx"
+            }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: !_vm.isDarkMode,
+                expression: "!isDarkMode"
+              }
+            ],
+            attrs: {
+              width: "60%",
+              height: "auto",
+              src: __webpack_require__(/*! ../../../images/lightLogo.svg */ "./resources/images/lightLogo.svg"),
+              alt: "Logo Ritonx"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "h4",
+            {
+              class: {
+                "light-text": _vm.isDrkMode,
+                "dark-text": !_vm.isDarkMode
+              }
+            },
+            [_vm._v("\n      ورود به سایت آموزشی Ritonx\n    ")]
+          ),
+          _vm._v(" "),
+          _c("input", {
+            class: {
+              "light-field": _vm.isDrkMode,
+              "dark-field": !_vm.isDarkMode
+            },
+            attrs: { type: "email", placeholder: "ایمیل" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            class: {
+              "light-field": _vm.isDrkMode,
+              "dark-field": !_vm.isDarkMode
+            },
+            attrs: { type: "password", placeholder: "رمز عبور" }
+          }),
+          _vm._v(" "),
+          _c("button", [_vm._v("ورود به سایت")]),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              class: {
+                "light-link": _vm.isDrkMode,
+                "dark-link": !_vm.isDarkMode
+              },
+              attrs: { to: "/recover" }
+            },
+            [_vm._v("\n      رمز عبور خود را فراموش کرده اید؟")]
+          ),
+          _vm._v(" "),
+          _c("button", { on: { click: _vm.toggleDarkMode } }, [
+            _vm._v("Toggle")
+          ])
+        ],
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -49357,6 +49472,28 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+
+/***/ "./resources/images/darkLogo.svg":
+/*!***************************************!*\
+  !*** ./resources/images/darkLogo.svg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/darkLogo.svg?f92147a5e7b2f93b638f0a054c1d0ca9";
+
+/***/ }),
+
+/***/ "./resources/images/lightLogo.svg":
+/*!****************************************!*\
+  !*** ./resources/images/lightLogo.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/lightLogo.svg?655859d66a49c956ec796f23702c25d5";
 
 /***/ }),
 
